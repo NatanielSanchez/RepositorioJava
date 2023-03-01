@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="eddd9f62-4662-468b-9bf9-7d45cea2a287" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RepositorioJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RepositorioJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clase 3/ejercicio_clase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/clase 3/ejercicio_clase3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/RepositorioJava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RepositorioJava/primerTexto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/primerTexto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLASE 3/ejercicio_clase3.class" beforeDir="false" afterPath="$PROJECT_DIR$/CLASE 3/ejercicio_clase3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CLASE 3/ejercicio_clase3.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/CLASE 3/mi_paquete/Arreglo.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
