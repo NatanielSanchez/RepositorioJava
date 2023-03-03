@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="eddd9f62-4662-468b-9bf9-7d45cea2a287" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLASE 3/ejercicio_clase3.class" beforeDir="false" afterPath="$PROJECT_DIR$/CLASE 3/ejercicio_clase3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLASE 3/ejercicio_clase3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.class" beforeDir="false" afterPath="$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clase 3/ejercicio_clase3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CLASE 3/ejercicio_clase3.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/CLASE 3/ejercicio_2.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/CLASE 3/mi_paquete/Arreglo.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/CLASE 3/mi_paquete/Texto.java" root0="SKIP_INSPECTION" />
   </component>

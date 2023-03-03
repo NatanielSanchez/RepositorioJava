@@ -1,7 +1,7 @@
 import mi_paquete.*;
 import java.util.Scanner;
 
-public class ejercicio_clase3
+public class ejercicio_1
 {
 	public static void main(String[] args)
 	{
