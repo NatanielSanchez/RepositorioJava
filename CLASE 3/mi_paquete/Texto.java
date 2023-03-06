@@ -38,104 +38,96 @@ public class Texto
 		return cont;
 	}
 	
-	public String encode_1()
+	public String encode_1() // Codifica el texto con desfase 1, usando la tabla ASCII
 	{
-		String code_table = "abcdefghijklmnñopqrstuvwxyz";
 		String encoded_text = "";
 		
 		for (int i=0; i < txt.length(); i++)
 		{
 			char c = txt.charAt(i);
-			if (c == ' ')
-			{
-				encoded_text = encoded_text + "$";
-				continue;
-			}
-			
-			int index = code_table.indexOf(c);
-			if (index == (code_table.length() - 1))
-				encoded_text = encoded_text + code_table.charAt(0);
+
+			int num = c;
+			if (num == 126)
+				c = (char) 32;
 			else
-				encoded_text = encoded_text + code_table.charAt(index+1);
+			{
+				num++;
+				c = (char) num;
+			}
+			encoded_text = encoded_text + c;
 		}
 		return encoded_text;
 	}
 	
-	public String encode_2()
+	public String encode_2() // Codifica el texto con desfase 2, usando la tabla ASCII
 	{
-		String code_table = "abcdefghijklmnñopqrstuvwxyz";
 		String encoded_text = "";
 		
 		for (int i=0; i < txt.length(); i++)
 		{
 			char c = txt.charAt(i);
-			if (c == ' ')
-			{
-				encoded_text = encoded_text + "$";
-				continue;
-			}
 			
-			int index = code_table.indexOf(c);
-			if (index == (code_table.length() - 1))
-				encoded_text = encoded_text + code_table.charAt(1);
+			int num = c;
+			if (num == 125)
+				c = (char) 32;
 			else
 			{
-				if (index == (code_table.length() - 2))
-					encoded_text = encoded_text + code_table.charAt(0);
+				if (num == 126)
+					c = (char) 33;
 				else
-					encoded_text = encoded_text + code_table.charAt(index+2);
+				{
+					num += 2;
+					c = (char) num;
+				}
 			}
+			encoded_text = encoded_text + c;
 		}
 		return encoded_text;
 	}
 	
-	public String decode_1()
+	public String decode_1() // Decodifica el texto
 	{
-		String code_table = "abcdefghijklmnñopqrstuvwxyz";
 		String decoded_text = "";
 		
 		for (int i=0; i < txt.length(); i++)
 		{
 			char c = txt.charAt(i);
-			if (c == '$')
-			{
-				decoded_text = decoded_text + " ";
-				continue;
-			}
 			
-			int index = code_table.indexOf(c);
-			if (index == 0)
-				decoded_text = decoded_text + code_table.charAt(code_table.length() - 1);
+			int num = c;
+			if (num == 32)
+				c = (char) 126;
 			else
-				decoded_text = decoded_text + code_table.charAt(index-1);
+			{
+				num--;
+				c = (char) num;
+			}
+			decoded_text = decoded_text + c;
 		}
 		return decoded_text;
 	}
 	
-	public String decode_2()
+	public String decode_2() // Decodifica el texto
 	{
-		String code_table = "abcdefghijklmnñopqrstuvwxyz";
 		String decoded_text = "";
 		
 		for (int i=0; i < txt.length(); i++)
 		{
 			char c = txt.charAt(i);
-			if (c == '$')
-			{
-				decoded_text = decoded_text + " ";
-				continue;
-			}
 			
-			int index = code_table.indexOf(c);
-			if (index == 1)
-				decoded_text = decoded_text + code_table.charAt(code_table.length() - 1);
+			int num = c;
+			if (num == 33)
+				c = (char) 126;
 			else
 			{
-				if (index == 0)
-					decoded_text = decoded_text + code_table.charAt(code_table.length() - 2);
+				if (num == 32)
+					c = (char) 125;
 				else
-					decoded_text = decoded_text + code_table.charAt(index-2);
+				{
+					num -= 2;
+					c = (char) num;
+				}
 			}
+			decoded_text = decoded_text + c;
 		}
 		return decoded_text;
 	}
