@@ -1,34 +1,34 @@
-public class Node
+public class Node <E extends Comparable>
 {
-	private Comparable info;
-	private Node next;
+	private E info;
+	private Node <E> next;
 	
 	public Node( )
 	{ 
 	}
 	
-	public Node(Comparable x, Node p)
+	public Node(E x, Node p)
 	{
 		info = x;
 		next = p;
 	}
 	
-	public Node getNext()
+	public Node <E>  getNext()
 	{
 		return next;
 	}
 	
-	public void setNext(Node p)
+	public void setNext(Node <E>  p)
 	{
 		next = p;
 	}
 	
-	public Comparable getInfo()
+	public E getInfo()
 	{
 		return info;
 	}
 	
-	public void setInfo(Comparable p)
+	public void setInfo(E p)
 	{
 		info = p;
 	}
